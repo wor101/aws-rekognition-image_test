@@ -10,7 +10,7 @@
        ENV['AWS_SECRET_ACCESS_KEY']
     )
     client   = Aws::Rekognition::Client.new credentials: credentials
-    photo = 'wrestler.jpg'
+    photo = 'blue_dice.jpg'
     path = File.expand_path(photo) # expand path relative to the current directory
 
     file = File.read(path)
